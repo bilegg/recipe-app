@@ -1,9 +1,37 @@
 .App {
-	display: grid;
 	text-align: center;
 	align-items: center;
 	justify-items: center;
 	background-color: #282c34;
 	min-height: 100vh;
 	color: white;
+	padding: 50px;
+}
+
+.RandomMeal .wrapper {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 40px;
+	justify-items: center;
+  align-items: center;
+}
+
+.RandomMeal .wrapper .meal {
+	grid-column: 1;
+	grid-row: 1;
+	font-size: 3.5em;
+}
+
+.RandomMeal .wrapper .instructions {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.RandomMeal .wrapper .thumbnail {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
 }
